@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>
+            array methods
+        </title>
+    </head>
+    <body>
+        <script>
+//-------------array conversiona---------
+// console.log([123,123].toString());
+// console.log(Number([]));
+// console.log(Boolean([]));
+//and 
+// if([]){
+//     console.log("hello")
+// }else{
+//     console.log("hi")
+// }
+
+
+//-------------array methods------------------
+
+// var a=[1,2,3,4,5,6,7]
+// console.log(a.length)
+// console.log(a.pop());
+// console.log(a);
+// console.log(a.pop(2));
+// console.log(a)
+// console.log(a.push(2));
+// console.log(a)
+// console.log(a.push(2,3,4,5));
+// console.log(a);
+
+// let a=["soujanya",2,"ramdeni",2,3,4,5]
+////shift----------
+// console.log(a.shift("hi"))
+// console.log(a)
+////unshift--------
+// console.log(a.unshift("hel".2));
+// console.log(a)
+////join------------
+// console.log(a.join("@"))
+// console.log(a);
+////and
+// delete a[2];
+// console.log(a[2]);
+////splice-------
+// let b=[1,2,3,4,5];
+// b.splice(1,2,"hello") //1 is index value 2 means how many places replace and last enter what have to replace
+// console.log(b);
+// b.splice(1,0,"hlo","hi")
+// console.log(b);
+
+// 1---------
+// let a=[1,2,3,4,5]
+// console.log([0]);
+// // and
+// a[5]="this"
+// console.log(a);
+//2---------
+// let a=["hapsy",2,3,4,5];
+// console.log(a[0]);
+// //and
+// let b=a[0];
+// for(i=0;i<b.length;i++){
+//     console.log(b[i]);
+// }
+//3----------
+// let a=["soujanya",2,"ramdeni",4]
+// for(i=0;i<a.length;i++){
+//     console.log(a[i]);
+// }
+// //and
+// for(i in a){
+//     console.log(a[i]);
+// }
+// //and
+// for(i of a){
+//     console.log(i);
+// }
+//4-----------
+
+//***problem 1-------//take an array print even index values using for if
+// var a=["soujanya","ramdeni","gmail","com"]
+// for(i=0; i<a.length; i++){
+   
+//     if(i%2 ==0){
+
+//         console.log(a[i]);
+//     }
+// }
+// and-------
+// let a=["soujanya","ramdeni","ashwini","narlapuram"]
+//         let b=a[0];
+//         let c=[]
+       
+//         for (let i = 0; i < a[0].length; i++) {
+//             if (i%2===0) {
+//                 c.push(a[0][i])
+//             }
+//         }
+//         for (let i = 0; i < a[2].length; i++) {
+//             if (i%2==0) {
+//                 c.push(a[2][i])
+//             }
+//         }
+//       console.log(c);
+
+//***problem 2----print even index values in a array using dynamic methods
+// function name(a) {
+//         let b=[];
+//         for(i in a){
+//            let c=0;
+//             for (j in a[i]){
+//                 c++;
+//             }
+//             b.push(c)
+//         }
+//         return b;
+//     }
+//     console.log(name("soujanua","ramdeni"));
+//     let a=["soujanya","ramdeni","ashwini","narlapuram"]
+//     let b=[]
+//     for (let i = 0; i < a.length; i++) {
+//         let c=0;
+//        for (let j = 0; j < a[i].length; j++) {
+//         c++;
+//        }
+//         b.push(c)
+//     }
+//     console.log(b);
+
+    //--------print an array length with out using pre-define words
+
+    // let a=["soujanya","ramdeni","ashwini","narlapuram"]
+    // // let b=[];
+    // for (let i = 0; a[i]!==undefined; i++) {
+    //     // b++; 
+    //     let c=0;
+    //     for (let j = 0; a[i][j]!==undefined; j++) {
+            
+    //         c++;
+    //     }
+    //     // b.push(c)
+    //     console.log(c);
+    // }
+    // // console.log(b);
+
+
+
+
+//problem 3---------print lengths of each string in an array
+//print each string length in an array
+// let a=["soujanya","ramdeni","hello"]
+// console.log(a[0].length,a[1].length,a[2].length)
+
+//***problem 4-----------------------//print vowels
+let a=["soujanya","ramdeni","hello"]
+    let d=[];
+    let b=[]
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if([i][j]=="a"||[i][j]=="e"||[i][j]=="i"||[i][j]=="o"||[i][j]=="u"){
+                console.log([i][j])
+                 // b.push(a[i][j])
+            d+=a[i][j]
+            //console.log(a[i][j]);
+        }   
+        }
+    }
+    console.log(d);
+    // console.log(b);  
+
+// problem 5-------------------------
+// let a=["soujanya","ramdeni","helo"]
+// //using for in---------
+// for(i in a[0]){
+//     console.log(a[0])
+// }
+// for(i in a[1]){
+//     console.log(a[1])
+// }
+// for(i in a[2]){
+//     console.log(a[2])
+// }
+// //using for of------------
+// for(i of a[0]){
+//     console.log(i)
+// }
+// for(i of a[1]){
+//     console.log(i)
+// }
+// for(i of a[2]){
+//     console.log(i)
+// }
+        </script>
+    </body>
+</html>
